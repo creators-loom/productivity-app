@@ -452,3 +452,54 @@ footer {
     justify-content: center;
     background-color: #e1f4ff;
 }
+
+
+/* Media Queries */
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white !important;
+    }
+
+    body {
+        background-color: #252b42;
+    }
+
+    .signup-btn {
+        color: #252b42 !important;
+    }
+
+
+    .background {
+        background-color: #394264;
+    }
+
+    header {
+
+        & .signup-btn {
+            background-color: white;
+            color: #252b42;
+        }
+    }
+
+    .hero {
+        .hero-image::before {
+        background-color: #ec5c2e;
+        }
+    }
+
+    .features {
+        & .feature1-content {
+            background-color: #394264;
+        }
+
+        & .feature3-background {
+            background-color: #394264 !important;
+        }
+    }
+
+    footer {
+        background-color: #394264;
+    }
+
+}
