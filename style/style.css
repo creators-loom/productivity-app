@@ -578,4 +578,20 @@ footer {
     }
 
 
+    .hero {
+        width: 100%;
+        padding: 0;
+        height: max-content;
+        flex-flow: column-reverse;
+        align-items: center;
+        margin-top: 120px;
+
+        & .hero-content {
+            width: 75%;
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+    
+
 }
