@@ -391,7 +391,6 @@ header {
 .contact {
     display: flex;
     align-items: center;
-    justify-content: end;
     gap: 10%;
     width: 100%;
     margin-top: 150px;
@@ -729,6 +728,36 @@ footer {
         & .cta-btn {
             position: initial;
             margin-top: 20px;
+        }
+    }
+
+    .contact {
+        flex-flow: column-reverse;
+        align-items: center;
+        margin-top: 50px;
+
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & div:nth-of-type(1) {
+            position: initial;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+
+            & .social-icons {
+                /* justify-content: center; */
+                margin-top: -20px;
+            }
+        }
+
+        & div:nth-of-type(2) {
+            margin-right: 0px;
+            column-gap: 120px;
         }
     }
 }
