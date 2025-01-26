@@ -13,6 +13,10 @@ body {
     align-items: center;
 }
 
+#check {
+    display: none;
+}
+
 .background {
     width: 100%;
     height: 750px;
@@ -67,10 +71,18 @@ header {
         background-color: white;
         padding: 8px 20px;
         font-weight: 800;
-
         border-radius: 30px;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -2px -2px 2px rgba(0, 0, 0, 0.1);
     }
+
+    & label {
+        padding: 0px 10px;
+        display: none;
+
+        & img {
+            width: 40px;
+        }
+       }
 }
 
 /* Hero Section */
@@ -501,5 +513,69 @@ footer {
     footer {
         background-color: #394264;
     }
+
+}
+
+
+@media (max-width: 768px) {
+
+    #check:checked ~ header {
+        & nav {
+            display: flex;
+
+            & ul {
+                flex-flow: column;
+                gap: 20px;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                background-color: #252b42;
+                width: 15%;
+                padding: 20px;
+                border-radius: 10px;
+                z-index: 1;
+            }
+
+            & ul::before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background-color: #252b42;
+                top: -6px;
+                right: 15px;
+                transform: rotate(45deg);
+            }
+        }
+
+
+        
+    }
+
+
+
+    header {
+        justify-content: space-between;
+
+        & h4 {
+            padding: 0px 10px;
+        }
+
+        & nav {
+            display: none;
+        }
+
+        & .signup-btn {
+            display: none;
+        }
+
+        & label {
+            display: initial;
+        }
+
+
+        
+    }
+
 
 }
