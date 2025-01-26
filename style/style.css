@@ -712,8 +712,23 @@ footer {
             }
         }
 
-
-
     } 
 
+
+    & .cta {
+        width: 100%;
+        flex-flow: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 100px;
+
+        & .cta-content {
+            text-align: center;
+        }
+
+        & .cta-btn {
+            position: initial;
+            margin-top: 20px;
+        }
+    }
 }
