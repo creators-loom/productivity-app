@@ -685,4 +685,35 @@ footer {
             }
         }
 
+        .testimonial {
+            margin-left: 0;
+            width: 80%;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+
+            & .testimonial-content {
+                width: 90%;
+                text-align: center;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
+
+            & .testimonial-image {
+                width: 50%;
+                margin-top: 20px;
+                
+
+                & img:nth-of-type(3) {
+                    display: none;
+                }
+            }
+        }
+
+
+
+    } 
+
 }
